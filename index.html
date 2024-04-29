@@ -1,12 +1,239 @@
+Q1:
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Practice Code</title>
+    <title>Body and Pre Tags Explanation</title>
+    <style>
+        body {
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Practice Code</h1>
+    <div class="container">
+        <h1>Explanation of <code>&lt;body&gt;</code> and <code>&lt;pre&gt;</code> Tags</h1>
+        <p>
+            The <code>&lt;body&gt;</code> tag defines the main content of the HTML document. It contains all
+             the content such as text, images, hyperlinks, tables, lists, etc. It is a required tag in HTML.
+        </p>
+        <p>
+            The <code>&lt;pre&gt;</code> tag defines preformatted text. Text inside <code>&lt;pre&gt;</code> tag is displayed in a
+             fixed-width font (usually Courier), and it preserves both spaces and line breaks.
+        </p>
+        <h2>Example of preformatted text:</h2>
+        <pre>
+This is a line of preformatted text.
+    This line has some spaces preserved.
+        This line has nested spaces preserved.
+        </pre>
+    </div>
 </body>
+</html>
 
+
+Q2:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Text formatting tags</title>
+        <style>
+            body {
+                text-align: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body >
+       <h1>To illustrate text formatting tags</h1><hr>
+       <marquee behavior="top" direction="right to left">This is an alternate Marquee text</marquee> 
+       <p>This is <i>italized</i></p>
+       <p>This is <u>Underlined</u></p>
+       <p>Thisa is <b>bold</b></p>
+       <p>This is <em>emphasized</em></p>
+       <p>This is <strong>Strong</strong>text</p>
+       <p>This is <s>striked text</s></p>
+       <p>This is <code>computer code</code></p>
+       <P> This is <sup>superscript</sup> code</P>
+       <p>This is <sub>subscript</sub> code</p>
+       <P>This is <big>big</big> text</P>
+       <p>This is <small>small</small> text</p>
+    </body>
+    </html>
+
+    Q3:
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested List</title>
+    <html>
+<body>
+<h5>An ordered List</h5>
+<ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <ol type="a">
+        <li>Black tea</li>
+        <li>Green tea</li>
+        <ol type="i">
+            <li>China</li>
+            <li>Africa</li>
+        </ol>
+    </ol>
+    <li>Milk</li>
+</ol>
+
+<h5>A Definition List:</h5>
+<ul style="text-decoration: none;">
+   <li>Bangalore</li>
+   <ul style="text-decoration: none;">
+    <li>-Capital City of Kamataka</li>
+   </ul>
+   <li>Mumbai</li>
+   <ul style="text-decoration: none;">
+    <li>-Capital City of Maharashtra</li>
+   </ul>
+</ul>
+</body>
+</html>
+
+    Q4: 
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Table</title>
+</head>
+<body>
+    <table border="2px solid Black">
+        <tr>
+            <th colspan="4">Table Heading cell Spanning 4 Columns</th>
+        </tr>
+        <tr>
+            <td>Normal cell</td>
+            <td colspan="2">Cell spanning 2 columns</td>
+            <td>Normal cell</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="background: gray;">Cell spanning 3 <br> row with a gray <br>(US spelling) <br> background</td>
+            <td>Normal cell</td>
+            <td>Normal cell</td>
+            <td>Normal cell</td>
+        </tr>
+        <tr>
+            <td>Normal cell</td>
+            <td colspan="2" rowspan="2">Cell spanning 2 row and 2 <br> column</td>
+        </tr>
+        <tr>
+            <td>Normal Cell</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+    Q5:
+
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Table</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Academic Information</legend>
+                Degree
+                <label>
+                <select>
+                    <option value="">Master of Business Administration</option>
+                    <option value="">Master of Business</option>
+                </select>
+                </label><br>
+                Student ID <input type="text" name="name" placeholder=""><br>
+                Class attended 
+            </fieldset>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>First Name:</label>
+                <input type="text" name="first name" placeholder=""><br>
+                <label>last name:</label>
+                <input type="text" name="last name" placeholder=""><br>
+                <div>
+                    Gender:
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+                Email:<input type="email" name="email" placeholder="">
+            </fieldset><br>
+            <textarea>TERMS AND CONDITIONS</textarea><br><br>
+            <input type="submit" value="Send Form">
+            <input type="reset" value="Clear Form">
+        </form>
+    </body>
+</html>
+
+    Q6:
+    <!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <title>Table</title>
+    </head>
+    <body>
+        <form>
+            <table border="2px solid Black">
+                <thead>
+                    <tr>
+                        <th colspan="2"><b>Pizza Shop 2.0</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Topping</td>
+                        <td> <input type="radio" name="topping" value="Supreme">Supreme<br>
+                            <input type="radio" name="topping" value="Vegetarian">Vegetarian<br>
+                            <input type="radio" name="topping" value="Hawaiian">Hawaiian
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Sauce</td>
+                        <td><label> 
+                            <select>
+                                <option value="Tomato">Tomato</option>
+                                <option value="chilisouse">chilisouse</option>
+                            </select>
+                        </label></td>
+                    </tr>
+                    <tr>
+                        <td>Optional Extras</td>
+                        <td>
+                            <input type="checkbox" name="topping" value="Extra Cheese">Extra Cheese
+                            <input type="checkbox" name="topping" value="Gluten Free Base">Gluten  Free Base
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Delivery Instractions:<br><textarea ></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Send my Oder"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
 </html>
